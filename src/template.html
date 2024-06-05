@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Notes</title>
+  </head>
+  <body>
+    <header>
+      <app-bar class="header-nav"></app-bar>
+    </header>
+    <main class="container mt-4">
+    <div class="card">
+      <div class="card-body">
+        <h2>Buat Baru Catatan</h2>
+        <form id="addNoteForm">
+          <div class="form-group mb-2">
+            <label for="inputTitle">Judul</label>
+            <input type="text" class="form-control" placeholder="Masukkan Judul" id="inputTitle" required />
+          </div>
+          <div class="form-group">
+            <label for="inputBody">Isi Catatan</label>
+            <textarea class="form-control mb-2" placeholder="Masukkan Isi Catatan" id="inputBody" rows="3" required></textarea>
+          </div>
+          <button type="submit" id="addNoteBtn" class="btn btn-primary">+ Buat Catatan</button>
+        </form>
+      </div>
+    </div>
+      <div class="card">
+        <div class="card-body">
+          <form id="searchForm" class="input-group">
+            <input type="text" placeholder="Cari Judul Catatan" id="searchInput" class="form-control"/>
+            <button type="submit" class="btn btn-primary-search">Cari</button>
+          </search-bar>
+          </form>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h2>List Catatan</h2>
+          <div id="listNote" class="row"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h2>List Arsip</h2>
+          <div id="listArchive" class="row"></div>
+        </div>
+      </div>
+
+      
+    <div id="loadingIndicator" class="loading-indicator d-none">Loading...</div>
+      
+    </main>
+    <footer>
+    <footer-bar class="footer-bar"></footer-bar>
+  </footer>
+  </body>
+  </body>
+</html>
